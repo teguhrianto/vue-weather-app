@@ -43,10 +43,34 @@
 
               <div class="row align-items-center justify-content-between">
                 <div class="col">
-                  <h6>{{ weather.lowTemperature }}&deg;C</h6>
+                  <h5 class="mb-0">
+                    <font-awesome-icon
+                      :icon="['fas', 'long-arrow-alt-down']"
+                      class="mr-1 text-primary"></font-awesome-icon>
+                    {{ weather.lowTemperature }}&deg;C
+                  </h5>
+                  <small>Low Temperature</small>
                 </div>
                 <div class="col">
-                  <h6>{{ weather.highTemperature }}&deg;C</h6>
+                  <h5 class="mb-0">
+                    <font-awesome-icon
+                      :icon="['fas', 'long-arrow-alt-up']"
+                      class="mr-1 text-danger"></font-awesome-icon>
+                    {{ weather.highTemperature }}&deg;C
+                  </h5>
+                  <small>High temperature</small>
+                </div>
+              </div>
+            </div>
+            <div class="card-footer text-center">
+              <div class="row align-items-center justify-content-between">
+                <div class="col">
+                  <p class="mb-0">{{ weather.feelsLike }}&deg;C</p>
+                  <small>Feels like</small>
+                </div>
+                <div class="col">
+                  <p class="mb-0">{{ weather.humidity }}%</p>
+                  <small>Humidity</small>
                 </div>
               </div>
             </div>
