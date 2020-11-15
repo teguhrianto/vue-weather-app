@@ -19,7 +19,7 @@
               </ul>
             </nav>
           </header>
-          <div class="card">
+          <div class="card mb-4">
             <div class="card-header">
               <form v-on:submit.prevent="getWeather">
                 <input
@@ -40,9 +40,9 @@
                   {{ weather.cityName }} (<span class="text-uppercase">{{ weather.country }}</span>)
                 </h5>
 
-                <img :src="weather.icon" alt="">
+                <img :src="weather.icon" alt="Weather Icon">
 
-                <h1 class="pt-3 mb-0">{{ weather.temperature }}&deg;C</h1>
+                <h1 class="mb-0">{{ weather.temperature }}&deg;C</h1>
                 <p class="text-capitalize">{{ weather.description }}</p>
 
                 <div class="row align-items-center justify-content-between">
