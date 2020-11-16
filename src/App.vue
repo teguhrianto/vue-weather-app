@@ -5,18 +5,11 @@
         <div class="col-lg-5 col-md-6">
           <header class="header" id="header">
             <nav class="navbar">
-              <div class="navbar-brand">
+              <div class="navbar-brand mx-auto">
                 <a href="/">
                   <img src="./assets/img/logo.png" alt="Simply Weather App" />
                 </a>
               </div>
-              <ul class="navbar-nav ml-auto">
-                <li class="nav-item">
-                  <b-form-checkbox v-model="isDarkMode" name="isDarkMode" switch>
-                    {{ isDarkMode ? 'Dark' : 'Light' }}
-                  </b-form-checkbox>
-                </li>
-              </ul>
             </nav>
           </header>
           <form v-on:submit.prevent="getWeather">
